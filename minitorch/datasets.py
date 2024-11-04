@@ -5,6 +5,7 @@ from typing import List, Tuple
 
 
 def make_pts(N):
+    """make pts"""
     X = []
     for i in range(N):
         x_1 = random.random()
@@ -21,6 +22,7 @@ class Graph:
 
 
 def simple(N):
+    """simple"""
     X = make_pts(N)
     y = []
     for x_1, x_2 in X:
@@ -30,6 +32,7 @@ def simple(N):
 
 
 def diag(N):
+    """diag"""
     X = make_pts(N)
     y = []
     for x_1, x_2 in X:
@@ -39,6 +42,7 @@ def diag(N):
 
 
 def split(N):
+    """split"""
     X = make_pts(N)
     y = []
     for x_1, x_2 in X:
@@ -48,6 +52,7 @@ def split(N):
 
 
 def xor(N):
+    """xor"""
     X = make_pts(N)
     y = []
     for x_1, x_2 in X:
@@ -57,6 +62,7 @@ def xor(N):
 
 
 def circle(N):
+    """circle"""
     X = make_pts(N)
     y = []
     for x_1, x_2 in X:
@@ -67,6 +73,7 @@ def circle(N):
 
 
 def spiral(N):
+    """spiral"""
 
     def x(t):
         return t * math.cos(t) / 20.0
